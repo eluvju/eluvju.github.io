@@ -543,6 +543,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 @media (max-width: 768px) {
   #about .about-img {
     height: auto;
+    padding-bottom: 2rem;
   }
   #about .about-img img {
     margin-left: 0;
