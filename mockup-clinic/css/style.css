@@ -1,9 +1,3 @@
-/*
-  Theme Name: Reveal
-  Theme URL: https://bootstrapmade.com/reveal-bootstrap-corporate-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -11,6 +5,13 @@ body {
   background: #fff;
   color: #444;
   font-family: "Open Sans", sans-serif;
+  -webkit-touch-callout: none;  /* iPhone OS, Safari */
+  -webkit-user-select: none;    /* Chrome, Safari 3 */
+  -khtml-user-select: none;     /* Safari 2 */
+  -moz-user-select: none;       /* Firefox */
+  -ms-user-select: none;        /* IE10+ */
+  user-select: none;            /* Possível implementação no futuro */
+  /* cursor: default; */
 }
 
 a {
@@ -40,14 +41,11 @@ h1, h2, h3, h4, h5, h6 {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #50d8af;
-  color: #fff;
-  padding: 6px 12px 9px 12px;
-  font-size: 20px;
-  border-radius: 30px;
+  font-size: 45px;
   right: 15px;
   bottom: 25px;
-  transition: background 0.5s;
+  transition: background 1s;
+  color: #50d8af;
 }
 
 @media (max-width: 768px) {
@@ -57,14 +55,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .back-to-top:focus {
-  background: #50d8af;
   color: #fff;
   outline: none;
+  opacity: 10;
 }
 
 .back-to-top:hover {
-  background: #0c2e8a;
-  color: #fff;
+  color: #0c2e8a;
 }
 
 /*--------------------------------------------------------------
@@ -121,7 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 84px;
   transition: all 0.5s;
   z-index: 997;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.800);
   box-shadow: 0px 6px 9px 0px rgba(0, 0, 0, 0.06);
 }
 
@@ -160,6 +157,16 @@ h1, h2, h3, h4, h5, h6 {
   #header #logo img {
     max-height: 40px;
   }
+}
+
+#header #logo h1 a:hover{
+  color: #50d8af;
+  transition: all 1s;
+}
+
+#header #logo h1 span:hover {
+  color: #0c2e8a;
+  transition:  1s;
 }
 
 /*--------------------------------------------------------------
@@ -217,6 +224,22 @@ h1, h2, h3, h4, h5, h6 {
   transition: 0.5s;
   margin: 10px;
   color: #fff;
+}
+
+.menu-active {
+  color: white;
+  background: #50d8af;
+  border: 1px solid #50d8af;
+  border-radius: 15px;
+  font-size: 2px;
+}
+
+.menu-active:hover{
+  color: #50d8af;
+  border: 1px solid #50d8af;
+  transition: 1s;
+  background: none;
+  
 }
 
 #intro .intro-content .btn-projects {
@@ -340,7 +363,7 @@ h1, h2, h3, h4, h5, h6 {
   outline: none;
 }
 
-.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+.nav-menu li:hover > a, .nav-menu > a {
   color: #50d8af;
 }
 
@@ -663,101 +686,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-/* Clients Section
---------------------------------*/
-#clients {
-  padding: 30px 0;
-}
-
-#clients img {
-  max-width: 100%;
-  opacity: 0.5;
-  transition: 0.3s;
-  padding: 15px 0;
-}
-
-#clients img:hover {
-  opacity: 1;
-}
-
-#clients .owl-nav, #clients .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-#clients .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd;
-}
-
-#clients .owl-dot.active {
-  background-color: #50d8af;
-}
-
-/* Our Portfolio Section
---------------------------------*/
-#portfolio {
-  background: #fff;
-  padding: 30px 0;
-}
-
-#portfolio .portfolio-overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-}
-
-#portfolio .portfolio-item {
-  overflow: hidden;
-  position: relative;
-  padding: 0;
-  vertical-align: middle;
-  text-align: center;
-}
-
-#portfolio .portfolio-item h2 {
-  color: #ffffff;
-  font-size: 24px;
-  margin: 0;
-  text-transform: capitalize;
-  font-weight: 700;
-}
-
-#portfolio .portfolio-item img {
-  -webkit-transition: all ease-in-out 0.4s;
-  transition: all ease-in-out 0.4s;
-  width: 100%;
-}
-
-#portfolio .portfolio-item:hover img {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
-}
-
-#portfolio .portfolio-item:hover .portfolio-overlay {
-  opacity: 1;
-  background: rgba(0, 0, 0, 0.7);
-}
-
-#portfolio .portfolio-info {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
 /* Testimonials Section
 --------------------------------*/
 #testimonials {
@@ -864,13 +792,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #call-to-action .cta-btn {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 700;
-  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 8px 26px;
-  border-radius: 3px;
+  padding: 10px 32px;
+  border-radius: 20px;
   transition: 0.5s;
   margin: 10px;
   border: 3px solid #fff;
@@ -908,6 +836,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #fff;
   padding: 15px;
   border-radius: 0 0 3px 3px;
+  border: 3px #50d8af;
 }
 
 #team .member h4 {
@@ -934,6 +863,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 16px;
   margin: 0 2px;
 }
+
 
 /* Contact Section
 --------------------------------*/
