@@ -101,7 +101,7 @@
 }
 
 /*--------------------------------------------------------------
-# Contatos
+# Contatos Mobile Footer
 --------------------------------------------------------------*/
 
 .footer .contactmobile{
@@ -132,11 +132,24 @@
     transition: 1s;
 }
 
+/*--------------------------------------------------------------
+# Contatos Desktop Footer
+--------------------------------------------------------------*/
+
 .footer .contactfooter{
     padding-top: 15px;
     text-align: center;
     Margin: 0 auto;
+    position: relative;
+    right: 2%;
 }
+
+.footer .contactfooter .fa-phone {
+    padding-left: 20px;
+    margin-left: 20px;
+    border-left: 1px solid #323f451f;
+}
+
 .footer .contactfooter a {
     color: #555;
     text-decoration: none;
@@ -153,6 +166,10 @@
     color: #50d8af;
     padding: 4px;
   }
+
+/*--------------------------------------------------------------
+# Footer Rules
+--------------------------------------------------------------*/
 
   @media (max-width: 768px) {
     .footer .contactfooter {
