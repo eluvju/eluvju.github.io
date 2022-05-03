@@ -977,17 +977,20 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 #contact .form button[type="submit"] {
   background: #50d8af;
-  border: 0;
+  border: 1px solid #50d8af;
   border-radius: 25px;
   padding: 10px 30px;
   color: #fff;
   transition: 0.4s;
   cursor: pointer;
   opacity: 0.75;
+  margin-top: 5px;
 }
 
 #contact .form button[type="submit"]:hover {
-  opacity: 2;
+  background: none;
+  color: #50d8af;
+  border: 1px solid #50d8af;
   transition: 1s;
 }
 
