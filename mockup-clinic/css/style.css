@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-.menu-active {
+.menu-book {
   color: white;
   background: #50d8af;
   border: 1px solid #50d8af;
@@ -234,7 +234,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 2px;
 }
 
-.menu-active:hover{
+.menu-book:hover{
   color: #50d8af;
   border: 1px solid #50d8af;
   transition: 1s;
