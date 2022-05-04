@@ -444,8 +444,8 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Nav Styling */
 #mobile-nav {
   position: fixed;
-  top: 11%;
-  padding-top: 18px;
+  top: 0;
+  padding-top: 12%;
   bottom: 0;
   z-index: 998;
   background: rgba(52, 59, 64, 0.9);
