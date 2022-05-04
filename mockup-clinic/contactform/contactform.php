@@ -25,5 +25,4 @@ if (mail($to,$sub,$body,$header)){
 }       
 
 
-
 ?php>
