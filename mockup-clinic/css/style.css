@@ -410,6 +410,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Mobile Nav Toggle */
+/* Icone */
+
 #mobile-nav-toggle {
   position: fixed;
   right: 0;
@@ -417,19 +419,21 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 999;
   margin: 20px 20px 0 0;
   border: 0;
-  border-radius: 25px;
   background: none;
   font-size: 24px;
   display: none;
   transition: all 0.4s;
   outline: none;
   cursor: pointer;
-  -webkit-border-radius: 10px;
 }
+
+/* Icone - Simbolo */
 
 #mobile-nav-toggle i {
   color: #555;
 }
+
+/* Icone - Apenas Mobile */
 
 @media (max-width: 768px) {
   #mobile-nav-toggle {
@@ -440,17 +444,15 @@ h1, h2, h3, h4, h5, h6 {
 /* Mobile Nav Styling */
 #mobile-nav {
   position: fixed;
-  top: 72px;
+  top: 11%;
   padding-top: 18px;
-  bottom: 65%;
+  bottom: 0;
   z-index: 998;
-  background: rgba(22, 56, 90, 0.773);
-  left: -600px;
-  width: 600px;
-  font-size: 16px;
-  overflow-X: auto;
-  transition: 0.2s;
-  text-align: left;
+  background: rgba(52, 59, 64, 0.9);
+  left: -250px;
+  width: 250px;
+  overflow-y: auto;
+  transition: 0.4s;
 }
 
 #mobile-nav ul {
@@ -461,13 +463,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #mobile-nav ul li {
   position: relative;
+  margin-right: 40%;
+  margin-left: 5%;
 }
 
 #mobile-nav ul li a {
   color: #fff;
   font-size: 16px;
   overflow: hidden;
-  padding: 10px 22px 10px 15px;
+  padding: 10px 15px 10px 15px;
   position: relative;
   text-decoration: none;
   width: 100%;
@@ -500,24 +504,52 @@ h1, h2, h3, h4, h5, h6 {
   color: #50d8af;
 }
 
-#mobile-body-overly {
-  width: 100%;
-  height: 100%;
-  z-index: 997;
-  top: 0;
-  left: 0;
-  position: fixed;
-  background: #a7ead794;
-  display: none;
-}
 
 /* Mobile Nav body classes */
 body.mobile-nav-active {
   overflow: hidden;
 }
 
-body.mobile-nav-active #mobile-nav {
-  left: 60%;
+@media (min-width: 980px) { 
+  body.mobile-nav-active #mobile-nav {
+  left: 70%;
+}
+}
+
+@media (max-width: 979px) {
+  body.mobile-nav-active #mobile-nav {
+    left: 77%;
+  }
+}
+
+@media (max-width: 710px) {
+  body.mobile-nav-active #mobile-nav {
+    left: 70%;
+  }
+}
+
+@media (max-width: 580px) {
+  body.mobile-nav-active #mobile-nav {
+    left: 65%;
+  }
+}
+
+@media (max-width: 500px) {
+  body.mobile-nav-active #mobile-nav {
+    left: 58%;
+  }
+}
+
+@media (max-width: 400px) {
+  body.mobile-nav-active #mobile-nav {
+    left: 50%;
+  }
+}
+
+@media (max-width: 320px) {
+  body.mobile-nav-active #mobile-nav {
+    left: 40%;
+  }
 }
 
 body.mobile-nav-active #mobile-nav-toggle {
