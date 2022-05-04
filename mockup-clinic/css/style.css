@@ -37,7 +37,10 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-/* Back to top button */
+/*--------------------------------------------------------------
+# Back-to-top Button
+--------------------------------------------------------------*/
+
 .back-to-top {
   position: fixed;
   display: none;
@@ -67,6 +70,7 @@ h1, h2, h3, h4, h5, h6 {
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
+
 #topbar {
   background: #fff;
   padding: 10px 0;
@@ -162,6 +166,9 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo h1 a:hover{
   color: #50d8af;
   transition: all 1s;
+}
+#header #logo h1 span {
+  color: #50d8af;
 }
 
 #header #logo h1 span:hover {
@@ -279,7 +286,6 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-transition-property: opacity;
   transition-property: opacity;
 }
-
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
