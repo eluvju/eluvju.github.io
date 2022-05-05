@@ -590,6 +590,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 0;
 }
 
+.section-header a {
+  color: #50d8af;
+  opacity: 0.75;
+  text-transform: uppercase;
+}
+
 /* About Section
 --------------------------------*/
 #about {
@@ -1022,7 +1028,14 @@ body.mobile-nav-active #mobile-nav-toggle {
   transition: 0.4s;
   cursor: pointer;
   opacity: 0.75;
-  margin-top: 5px;
+  Margin: 0 auto;
+  margin-left: 25px;
+}
+
+@media (max-width: 768px) {
+  #contact .form button[type="submit"]  {
+    margin-top: 15px;;
+  }
 }
 
 #contact .form button[type="submit"]:hover {
