@@ -1043,7 +1043,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #contact .form button[type="submit"]:hover {
   background: none;
   color: #50d8af;
-  border: 1px solid #50d8af;
+  border: 2px solid #50d8af;
   transition: 1s;
 }
 
@@ -1059,7 +1059,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin: 10px;
   color: #fff;
   background: #081e5b;;
-  border: 2px solid #081e5b;
+  border: 1px solid #081e5b;
 }
 
 #contact .form .btn-projects:hover {
