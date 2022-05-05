@@ -1036,7 +1036,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 @media (max-width: 495px) {
   #contact .form button[type="submit"]  {
-    margin-top: 15px;;
+    margin-top: 15px;
   }
 }
 
