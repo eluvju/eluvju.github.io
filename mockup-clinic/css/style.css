@@ -1032,7 +1032,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-left: 25px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 495px) {
   #contact .form button[type="submit"]  {
     margin-top: 15px;;
   }
