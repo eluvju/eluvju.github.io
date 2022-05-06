@@ -167,9 +167,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #50d8af;
   transition: all 1s;
 }
-#header #logo h1 span {
-  color: #50d8af;
-}
 
 #header #logo h1 span:hover {
   color: #0c2e8a;
